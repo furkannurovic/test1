@@ -28,7 +28,7 @@ $mail->addAddress('furkan.nurovic@gmail.com', 'Furkan Nurovic');     // Add a re
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
 $mail->Subject = 'AHIRETSKA OBSKRBA';
-$mail->Body    = 'IME: $username \n TEL: $phonenumber \n ADRESA: $adress';
+$mail->Body    = 'IME: ${username} \n TEL: ${phonenumber} \n ADRESA: ${adress}';
 
 if(!$mail->send()) {
     echo 'Message could not be sent.';
