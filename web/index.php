@@ -13,10 +13,10 @@ $adress = $_POST["userMessage"];
 $mail = new PHPMailer;
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp-relay.gmail.com';                 // Specify main and backup SMTP servers
+$mail->Host = ' smtp.zoho.eu';                 // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'furkan.nurovic@bosnjackagim.edu.ba';                 // SMTP username
-$mail->Password = 'sjediodlican5';                           // SMTP password
+$mail->Username = 'email@ishakdervisevic.com';                 // SMTP username
+$mail->Password = 'atwas64atwwbwb32';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
 $mail->From = 'from@example.com';
