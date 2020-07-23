@@ -22,8 +22,7 @@ $mail->Password = 'atwas64atwwbwb32';                           // SMTP password
 
 $mail->From = 'email@ishakdervisevic.com';
 $mail->FromName = 'Ishak Dervisevic';
-$mail->addAddress('furkan.nurovic@gmail.com', 'Furkan Nurovic');     // Add a recipient
-
+$mail->addAddress('ekrem.nurovic@ibu.edu.ba', 'Ekrem Nurovic');     // Add a recipient
 
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
