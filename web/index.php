@@ -12,12 +12,14 @@ $adress = $_POST["userMessage"];
 
 $mail = new PHPMailer;
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->isSMTP();    
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;                                  // Set mailer to use SMTP
 $mail->Host = ' smtp.zoho.eu';                 // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->SMTPAuth = true;        
+$mail->Port = 587;      
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                           // Enable encryption, 'ssl' also accepted                  // Enable SMTP authentication
 $mail->Username = 'email@ishakdervisevic.com';                 // SMTP username
 $mail->Password = 'atwas64atwwbwb32';                           // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
 $mail->From = 'from@example.com';
 $mail->FromName = 'Mailer';
