@@ -20,8 +20,8 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                           //
 $mail->Username = 'email@ishakdervisevic.com';                 // SMTP username
 $mail->Password = 'atwas64atwwbwb32';                           // SMTP password
 
-$mail->From = 'from@example.com';
-$mail->FromName = 'Mailer';
+$mail->From = 'email@ishakdervisevic.com';
+$mail->FromName = 'Ishak Dervisevic';
 $mail->addAddress('furkan.nurovic@gmail.com', 'Furkan Nurovic');     // Add a recipient
 
 
