@@ -13,7 +13,6 @@ $adress = $_POST["userMessage"];
 $mail = new PHPMailer;
 
 $mail->isSMTP();    
-$mail->SMTPDebug = SMTP::DEBUG_SERVER;                                  // Set mailer to use SMTP
 $mail->Host = ' smtp.zoho.eu';                 // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;        
 $mail->Port = 587;      
